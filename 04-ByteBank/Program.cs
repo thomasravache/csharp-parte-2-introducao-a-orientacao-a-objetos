@@ -22,6 +22,13 @@ namespace _04_ByteBank
 
             Console.WriteLine(conta.saldo);
 
+            ContaCorrente conta2 = new ContaCorrente();
+
+            conta.Transferir(100, conta2);
+
+            Console.WriteLine(conta.saldo);
+            Console.WriteLine(conta2.saldo);
+
             Console.ReadLine();
         }
     }
