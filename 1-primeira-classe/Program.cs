@@ -10,6 +10,9 @@ namespace _1_primeira_classe
     {
         static void Main(string[] args)
         {
+            new ContaCorrente();
+
+            Console.ReadLine();
         }
     }
 }
