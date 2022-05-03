@@ -10,7 +10,14 @@ namespace _1_primeira_classe
     {
         static void Main(string[] args)
         {
-            new ContaCorrente();
+            ContaCorrente contaDaGabriela = new ContaCorrente(); // Uma nova instancia de conta corrente
+
+            contaDaGabriela.titular = "Gabriela";
+            contaDaGabriela.agencia = 863;
+            contaDaGabriela.saldo = 2000;
+            contaDaGabriela.numero = 123;
+
+            Console.WriteLine(contaDaGabriela.titular);
 
             Console.ReadLine();
         }
