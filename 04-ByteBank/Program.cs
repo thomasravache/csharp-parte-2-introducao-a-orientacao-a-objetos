@@ -18,6 +18,10 @@ namespace _04_ByteBank
             Console.WriteLine(result);
             Console.WriteLine(conta.saldo);
 
+            conta.Depositar(100);
+
+            Console.WriteLine(conta.saldo);
+
             Console.ReadLine();
         }
     }
