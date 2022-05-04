@@ -2,19 +2,9 @@
 {
     public class ContaCorrente
     {
-       // private Cliente _titular;
         public int Agencia { get; set; }
         public int Numero { get; set; }
         private double _saldo = 100;
-
-        // public Cliente Titular
-        // {
-            // get { return _titular; }
-            // set { _titular = value; }
-        // }
-
-        public Cliente Titular { get; set; }
-
         public double Saldo
         {
             get
@@ -32,10 +22,16 @@
             }
         }
 
+        public Cliente Titular { get; set; }
+
+        public static int TotalDeContasCriadas { get; private set; }
+
         public ContaCorrente(int agencia, int numero)
         {
             this.Agencia = agencia;
             this.Numero = numero;
+
+            TotalDeContasCriadas++;
         }
 
         public bool Sacar(double valor)
