@@ -4,21 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _06_ByteBank
+namespace _07_ByteBank
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            ContaCorrente conta = new ContaCorrente();
+            ContaCorrente conta = new ContaCorrente(12345, 121212112);
 
-            conta.Titular = new Cliente();
-
-            conta.Titular.Nome = "teste";
-
-            conta.Saldo = 10;
-
-            Console.WriteLine(conta.Titular.Nome);
+            Console.WriteLine(conta.Agencia);
+            Console.WriteLine(conta.Numero);
 
             Console.ReadLine();
         }

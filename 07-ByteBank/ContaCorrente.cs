@@ -1,4 +1,4 @@
-﻿namespace _06_ByteBank
+﻿namespace _07_ByteBank
 {
     public class ContaCorrente
     {
@@ -30,6 +30,12 @@
 
                 this._saldo = value;
             }
+        }
+
+        public ContaCorrente(int agencia, int numero)
+        {
+            this.Agencia = agencia;
+            this.Numero = numero;
         }
 
         public bool Sacar(double valor)
